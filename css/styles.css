@@ -1,0 +1,495 @@
+
+    /* 基础样式 */
+    :root {
+      --hero-h1-color: #000000;
+      --hero-h2-color: #666666;
+      --section-h2-color: #007e60;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    /* 标题样式 */
+    .h1 {
+      color: var(--hero-h1-color);
+      font-family: 'Poppins', sans-serif;
+      font-size: 64px;
+      font-weight: 700;
+      line-height: 1.05;
+    }
+
+    .h2 {
+      color: var(--hero-h2-color);
+      font-family: 'Poppins', sans-serif;
+      font-size: 36px;
+      font-weight: 500;
+      line-height: 1.08;
+    }
+
+    /* 手机模型样式 */
+    .mockup {
+      position: relative;
+      width: 90%;
+      height: auto;
+      margin-left: -10%;
+      transform: scale(0.9);
+      transform-origin: top left;
+    }
+
+    .ufo-mockup--display {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .mockup-svg-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* 布局样式 */
+    .grid {
+      display: grid;
+      gap: 2rem;
+      padding: 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .ufo--hero-content-grid {
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+    }
+
+    /* 文本样式 */
+    .section-h2 {
+      color: var(--section-h2-color);
+      font-family: 'Libre Bodoni', serif;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 1.19;
+    }
+
+    /* 媒体查询 */
+    @media (max-width: 768px) {
+      .h1 {
+        font-size: 35.2px;
+        line-height: 1.22;
+      }
+      
+      .h2 {
+        font-size: 24px;
+        line-height: 1.35;
+      }
+      
+      .mockup {
+        width: 100%;
+        margin-left: 0;
+        transform: scale(1);
+      }
+    }
+
+    /* 计算后的样式 */
+    .ufo--portfolio-page {
+            
+          }
+.ufo--page-sections {
+            
+          }
+.section-container {
+            
+          }
+.ufo-sec {
+            
+          }
+.ufo-sec--header-main {
+            
+          }
+.ufo-sec--bg {
+            
+          }
+.gradient {
+            
+          }
+.overlay {
+            
+          }
+.grid {
+            
+          }
+.ufo--site-nav {
+            
+          }
+.profile_theme_seven {
+            
+          }
+.ufo--site-owner {
+            
+          }
+.info {
+            
+          }
+.name {
+            
+          }
+.company {
+            
+          }
+.ufo--hero-content-grid {
+            
+          }
+.col {
+            
+          }
+.col-text {
+            
+          }
+.left {
+            
+          }
+.bottom {
+            
+          }
+.text-container {
+            
+          }
+.align-text-left {
+            
+          }
+.h1 {
+            
+          }
+.h2 {
+            
+          }
+.ufo-sec--textandmedia {
+            
+          }
+.flipped-true {
+            
+          }
+.media-image {
+            
+          }
+.media-large {
+            
+          }
+.aligned-middle {
+            
+          }
+.col-media {
+            
+          }
+.media-container {
+            
+          }
+.aspect-ratio-undefined {
+            
+          }
+.medium-zoom-image {
+            
+          }
+.media-caption {
+            
+          }
+.p2 {
+            
+          }
+.ufo-sec--columns {
+            
+          }
+.ufo--columns {
+            
+          }
+.ufo--columns-2 {
+            
+          }
+.ufo--column {
+            
+          }
+.ufo--column-content {
+            
+          }
+.ufo--columns-4 {
+            
+          }
+.ufo-sec--header {
+            
+          }
+.media-medium {
+            
+          }
+.ufo-sec--text {
+            
+          }
+.ufo-sec--content {
+            
+          }
+.align-box-center {
+            
+          }
+.align-text-center {
+            
+          }
+.ufo-sec--dividerline {
+            
+          }
+.divider-line {
+            
+          }
+.weight-light {
+            
+          }
+.above {
+            
+          }
+.line {
+            
+          }
+.preview {
+            
+          }
+.text {
+            
+          }
+.ufo-sec--gallery {
+            
+          }
+.image-gallery {
+            
+          }
+.carousel {
+            
+          }
+.carousel-gallery {
+            
+          }
+.glide--ltr {
+            
+          }
+.glide--carousel {
+            
+          }
+.glide--swipeable {
+            
+          }
+.carousel__track {
+            
+          }
+.carousel__slides {
+            
+          }
+.carousel__slide {
+            
+          }
+.glide__slide--clone {
+            
+          }
+.gallery-item {
+            
+          }
+.mockup-display {
+            
+          }
+.mockup-image {
+            
+          }
+.aspect-ratio-Original {
+            
+          }
+.glide__slide--active {
+            
+          }
+.carousel__arrows {
+            
+          }
+.carousel__arrow {
+            
+          }
+.carousel__arrow--left {
+            
+          }
+.carousel__arrow--right {
+            
+          }
+.slider {
+            
+          }
+.slider-gallery {
+            
+          }
+.glide--slider {
+            
+          }
+.slider-grid-container {
+            
+          }
+.slider__track {
+            
+          }
+.carousel__slides--slider {
+            
+          }
+.carousel__slide--slider {
+            
+          }
+.slider-mockup {
+            
+          }
+.ufo-mockup--display {
+            
+          }
+.ufo-mockup--screen {
+            
+          }
+.ufo-mockup--scroller {
+            
+          }
+.slider-image-container {
+            
+          }
+.slider-image {
+            
+          }
+.glide__bullets {
+            
+          }
+.glide__bullet {
+            
+          }
+.glide__bullet--active {
+            
+          }
+.ufo--columns-3 {
+            
+          }
+.ufo-sec--media {
+            
+          }
+.image {
+            
+          }
+.mockup-on {
+            
+          }
+.display-mode--large {
+            
+          }
+.grid-gallery {
+            
+          }
+.glide--grid {
+            
+          }
+.mockups-in-gallery {
+            
+          }
+.Mobile-mockup {
+            
+          }
+.gallery-columns-3 {
+            
+          }
+.Mobile {
+            
+          }
+.mockup {
+            
+          }
+.ufo-mockup--frame {
+            
+          }
+.mockup-svg-container {
+            
+          }
+.wrapper {
+            
+          }
+.scrollable-container-mockup {
+            
+          }
+.display-mode--small {
+            
+          }
+.project-footer {
+            
+          }
+.footer-info {
+            
+          }
+.project-list {
+            
+          }
+.project-owner {
+            
+          }
+.owner {
+            
+          }
+.owner-info {
+            
+          }
+.owner-name {
+            
+          }
+.owner-company {
+            
+          }
+.footer-links {
+            
+          }
+.footer-btn {
+            
+          }
+.project-owner-projects {
+            
+          }
+.title-line {
+            
+          }
+.owner-projects-content {
+            
+          }
+.f-project {
+            
+          }
+.related-project {
+            
+          }
+.title {
+            
+          }
+.scroll-to-top {
+            
+          }
+
+    /* 自定义样式修复 */
+    .ufo-sec {
+      position: relative;
+      width: 100%;
+    }
+
+    .ufo--site-nav {
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .media-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* 确保背景图片显示 */
+    [style*="background-image"] {
+      background-size: cover !important;
+      background-position: center !important;
+      background-repeat: no-repeat !important;
+    }
+    
