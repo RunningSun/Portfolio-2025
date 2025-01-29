@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaccine Order Process - Portfolio</title>
+    <meta name="description" content="A case study of the vaccine order process redesign project for UK group buyers">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/case-study.css">
+    
+    <!-- Additional style override -->
+    <style>
+        /* Ensure headings use the correct color */
+        .case-study-section h2,
+        .case-study-header h1,
+        .overview-content h3,
+        .process-content h3,
+        .detail-item h3,
+        .challenge-block h4,
+        .impact-section h2,
+        .next-project h2,
+        .results-section h2 {
+            color: #18191a !important;
+        }
+
+        /* Product Launch Layout */
+        .product-launch-container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 2rem;
+            max-width: 100%;
+            padding: 0 2rem;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-bottom: 6rem;
+        }
+
+        .product-launch-text {
+            text-align: left;
+            padding-left: 0;
+        }
+
+        .product-launch-image img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+
+        /* Design cards layout - 3x1 with full width */
+        .design-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            width: 100%;
+            padding: 0 2rem;
+            margin: 2rem 0;
+        }
+
+        .design-card {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Understanding Problems section */
+        .research-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 4rem;
+            margin: 4rem 0;
+            width: 100%;
+            padding: 0 2rem;
+        }
+
+        .research-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .research-image {
+            background: #f5f5f5;
+            border-radius: 12px;
+            padding: 2rem;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .research-image img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+
+        /* Update section content max-width */
+        .section-content {
+            max-width: 100%;
+            padding: 0 2rem;
+        }
+
+        /* Design cards layout - 3x1 */
+        .design-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .design-card {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Pain points layout - horizontal with text left, image right */
+        .pain-points-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .pain-point-card {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .pain-point-content {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .pain-point-image {
+            display: flex;
+            align-items: center;
+        }
+
+        .pain-point-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .challenge-image {
+            width: 100%;
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        .challenge-image img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+
+        /* Final Design and Key Metrics spacing */
+        .final-design-section {
+            margin-top: 6rem;
+        }
+
+        .key-metrics-section {
+            margin-top: 6rem;
+        }
+
+        /* Background and Ask section styling */
+        .background-ask-container {
+            max-width: 1200px;
+            margin: 6rem auto;
+            padding: 0 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
+
+        .background-section,
+        .ask-section {
+            width: 100%;
+        }
+
+        .background-section h2,
+        .ask-section h2 {
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="site-header">
+        <nav class="main-nav">
+            <div class="nav-container">
+                <a href="../index.html" class="logo">Junqian</a>
+                <ul class="nav-links">
+                    <li><a href="../index.html#work">Work</a></li>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#collaboration">Collaboration</a></li>
+                    <li><a href="../index.html#community">Community</a></li>
+                    <li><a href="../index.html#ai">AI</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Product Launch -->
+    <section class="case-study-section">
+        <div class="product-launch-container">
+            <div class="product-launch-text">
+                <h2>PRODUCT LAUNCHED</h2>
+                <p>🎉 "The design was handed off to the Dev team in February 2022 and was launched in the second quarter of 2023."</p>
+            </div>
+            <div class="product-launch-image">
+                <img src="../images/vaccine/vaccine-overview.png" alt="Vaccine Overview">
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Details -->
+    <section class="case-study-section project-details">
+        <div class="grid-container">
+            <div class="grid-column">
+                <h3>MY ROLE</h3>
+                <p>Product Designer</p>
+                <p>(Team of 2)</p>
+            </div>
+            <div class="grid-column">
+                <h3>YEAR</h3>
+                <p>2022</p>
+            </div>
+            <div class="grid-column">
+                <h3>TIMELINE</h3>
+                <p>8 weeks</p>
+            </div>
+            <div class="grid-column">
+                <h3>TOOLS</h3>
+                <p>Figma</p>
+                <p>Miro</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Background and Ask -->
+    <section class="case-study-section">
+        <div class="background-ask-container">
+            <div class="background-section">
+                <h2>BACKGROUND</h2>
+                <p>At Sanofi in the UK, with nearly 700 accounts to manage and a substantial 7 million euros on the line, the goal of this project was to redesign the whole flu orders process for multiple account holders and its successful experiences will be applied to other countries' vaccine businesses, such as Canada.</p>
+            </div>
+            <div class="ask-section">
+                <h2>THE ASK</h2>
+                <p>To offer a better way to order flu vaccines for UK group buyers</p>
+                <p>To offer a quicker and easier way for group buyers to manage multiple accounts secure686+ accounts, and 7 million turnovers.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Section -->
+    <section class="case-study-section">
+        <div class="section-content">
+            <h2>DESIGN</h2>
+            <p class="section-subtitle">In the new design, we addressed the issues by making the following improvements:</p>
+            
+            <div class="design-cards">
+                <div class="design-card">
+                    <h3>Streamlining Content Organization and User Interaction</h3>
+                    <p>Grouped related content logically and minimized excessive buttons, focusing on essential actions. The revamped design offers a cohesive structure, facilitating easy content discovery and navigation for users.</p>
+                </div>
+                
+                <div class="design-card">
+                    <h3>Enhancing Order Status Visibility and Accessibility</h3>
+                    <p>Utilize the table to display various order statuses, providing filter options for enhanced accessibility. Also, the quick links for convenient access.</p>
+                </div>
+                
+                <div class="design-card">
+                    <h3>Multiple accounts selection</h3>
+                    <p>Enable the selection of multiple accounts simultaneously for streamlined actions, facilitating efficient inquiry and order placement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Link -->
+    <section class="case-study-section process-link">
+        <div class="section-content text-center">
+            <p class="explore-text">Explore the entire design process and outcomes...</p>
+        </div>
+    </section>
+
+    <!-- Understanding Problems -->
+    <section class="case-study-section understanding-problems" style="max-width: 1400px; margin: 0 auto; padding: 4rem 2rem;">
+        <div class="section-content">
+            <h2>UNDERSTAND THE PROBLEM</h2>
+            <p class="section-description" style="font-size: 1.2rem; line-height: 1.6; color: #666; margin-bottom: 3rem; max-width: 800px;">To assess the current Vaxishop website, we conducted research to understand the existing problems and pain points.</p>
+            
+            <div class="research-grid" style="display: grid; grid-template-columns: 1fr 3fr; gap: 4rem; margin: 4rem 0;">
+                <div class="research-content" style="padding-right: 2rem;">
+                    <h3 style="color: #8A2BE2; font-size: 1.75rem; margin-bottom: 1.5rem;"><span class="number">01</span> User Interview</h3>
+                    <p style="font-size: 1.1rem; line-height: 1.6;">We conducted a series of 6 in-depth interviews with current account managers, delving into their daily routines to uncover critical pain points throughout the vaccine ordering process. This flowchart illustrates the users' actions, decisions, and emotions at each stage. We identified Account switching plays a crucial role in every process and was cumbersome.</p>
+                </div>
+                <div class="research-image" style="background: #f5f5f5; border-radius: 12px; padding: 2rem; min-height: 500px; display: flex; align-items: center; justify-content: center;">
+                    <img src="../images/vaccine/user-interview-flow.svg" alt="User Interview Flow Chart" style="width: 100%; height: auto; object-fit: contain; border-radius: 8px;">
+                </div>
+            </div>
+
+            <div class="research-grid" style="display: grid; grid-template-columns: 3fr 1fr; gap: 4rem; margin: 4rem 0;">
+                <div class="research-image" style="background: #f5f5f5; border-radius: 12px; padding: 2rem; min-height: 500px; display: flex; align-items: center; justify-content: center;">
+                    <img src="../images/vaccine/current-flow-analysis.svg" alt="Current Flow Analysis" style="width: 100%; height: auto; object-fit: contain; border-radius: 8px;">
+                </div>
+                <div class="research-content" style="padding-left: 2rem;">
+                    <h3 style="color: #8A2BE2; font-size: 1.75rem; margin-bottom: 1.5rem;"><span class="number">02</span> Analyze the current flow</h3>
+                    <p style="font-size: 1.1rem; line-height: 1.6;">In redesigning the flu order process, fully understanding the user flow is essential, so we ensure that changes made to the order process align with user needs and operational efficiency. Anticipating how alterations impact adjacent processes is essential to maintain coherence and usability.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Challenge Section -->
+    <section class="case-study-section challenges">
+        <div class="section-content">
+            <h2>CHALLENGE</h2>
+            <p class="challenge-intro">There are two general types of user needs: efficiency and entertainment. In this project, I focused on solving efficiency issues, as an efficient solution fosters positive user emotions. To address the current challenges, I analyzed the flows for making and editing reservations, as well as checking order status. The key issue was users' difficulty in accessing multiple accounts, leading to a cumbersome experience.</p>
+            <p class="challenge-question"><strong>How might we simplify the workflow while ensuring a smooth order process?</strong></p>
+            
+            <div class="challenge-image">
+                <img src="../images/vaccine/challenge-overview.svg" alt="Challenge Overview">
+            </div>
+
+            <p class="pain-points-intro">Also, through our user research data and analysis, we identified 3 major points in this current Vaxishop website.</p>
+
+            <div class="pain-points-grid">
+                <div class="pain-point-card">
+                    <div class="pain-point-content">
+                        <h3>Pain point 01</h3>
+                        <h4>Each time only one account is allowed to be selected</h4>
+                        <div class="rationale">
+                            <h5>Rationale</h5>
+                            <p>Through our analysis of the current user flow, we have identified an opportunity to introduce multiple account selections. This enhancement has the potential to significantly improve overall efficiency.</p>
+                        </div>
+                    </div>
+                    <div class="pain-point-image">
+                        <img src="../images/vaccine/pain-point-1.png" alt="Single Account Selection Issue">
+                    </div>
+                </div>
+
+                <div class="pain-point-card">
+                    <div class="pain-point-content">
+                        <h3>Pain point 02</h3>
+                        <h4>No central view of the order status.</h4>
+                        <div class="rationale">
+                            <h5>Rationale</h5>
+                            <p>Through user interviews, we observed that users frequently need to access the order information, and the current method of accessing it is cumbersome and inefficient.</p>
+                        </div>
+                    </div>
+                    <div class="pain-point-image">
+                        <img src="../images/vaccine/pain-point-2.svg" alt="Order Status View Issue">
+                    </div>
+                </div>
+
+                <div class="pain-point-card">
+                    <div class="pain-point-content">
+                        <h3>Pain point 03</h3>
+                        <h4>Accessibility issues</h4>
+                        <div class="rationale">
+                            <h5>Rationale</h5>
+                            <p>During the heuristic evaluation, we identified several accessibility issues with the current website. For instance, the layout lacks clear focal points for eye tracking, making it difficult for users to identify key information and make informed decisions quickly.</p>
+                        </div>
+                    </div>
+                    <div class="pain-point-image">
+                        <img src="../images/vaccine/pain-point-3.svg" alt="Accessibility Issues">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Design -->
+    <section class="case-study-section final-design-section">
+        <h2 style="text-align: center; width: 100%; margin-bottom: 3rem;">FINAL DESIGN</h2>
+        <div class="final-design-grid">
+            <img src="../images/vaccine/final-design-1.svg" alt="Final design view 1">
+            <img src="../images/vaccine/final-design-2.svg" alt="Final design view 2">
+            <img src="../images/vaccine/final-design-3.svg" alt="Final design view 3">
+            <img src="../images/vaccine/final-design-4.svg" alt="Final design view 4">
+        </div>
+    </section>
+
+    <!-- Key Metrics -->
+    <section class="case-study-section key-metrics-section">
+        <h2 style="text-align: center; width: 100%; margin-bottom: 3rem;">KEY METRICS</h2>
+        <div class="metrics-grid">
+            <div class="metric-item">
+                <h3>90%</h3>
+                <p>saving of clicks</p>
+            </div>
+            <div class="metric-item">
+                <h3>23000</h3>
+                <p>hours saving for group buyers</p>
+            </div>
+            <div class="metric-item">
+                <h3>7</h3>
+                <p>NPS improve from 2-3 to 7</p>
+            </div>
+            <div class="metric-item">
+                <h3>7 million</h3>
+                <p>euro secured with better experience</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2024 Junqian. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/main.js"></script>
+
+    <style>
+        .final-design-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin: 0 auto;
+            max-width: 1200px;
+            padding: 0 2rem;
+        }
+
+        .final-design-grid img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            margin: 0 auto;
+            max-width: 1200px;
+            padding: 0 2rem;
+        }
+
+        .metric-item {
+            text-align: center;
+        }
+
+        .metric-item h3 {
+            color: #8A2BE2;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .metric-item p {
+            font-size: 1.1rem;
+            color: #333;
+        }
+    </style>
+</body>
+</html> 
